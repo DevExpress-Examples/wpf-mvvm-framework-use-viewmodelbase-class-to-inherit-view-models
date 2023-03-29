@@ -1,4 +1,5 @@
 ﻿using DevExpress.Mvvm;
+using DevExpress.Mvvm.DataAnnotations;
 
 namespace Example.ViewModel {
     public class MainViewModel : ViewModelBase {
@@ -28,7 +29,7 @@ namespace Example.ViewModel {
         }
 
         IMessageBoxService MessageBoxService { get { return GetService<IMessageBoxService>(); } }
-        public DelegateCommand<string> ShowMessageCommand { get; private set; }
+        public DelegateCommand<string> ShowMessageCommand { get; }
         void ShowMessage(string message) {
             MessageBoxService.Show(message);
         }
@@ -37,6 +38,13 @@ namespace Example.ViewModel {
         }
         public MainViewModel() {
             ShowMessageCommand = new DelegateCommand<string>(ShowMessage, CanShowMessage);
+        }
+        [Command]
+        public void Register() {
+            MessageBoxService.Show(FullName);
+        }
+        public bool CanRegister() {
+            return !(string.IsNullOrEmpty(FirstName) || string.IsNullOrEmpty(LastName));
         }
     }
 }
