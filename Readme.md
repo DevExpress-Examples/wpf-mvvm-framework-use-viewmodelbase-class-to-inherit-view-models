@@ -3,23 +3,26 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E5169)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MainWindow.xaml.vb))
+# WPF MVVM Framework - Use the ViewModelBase Class to Inherit View Models
+
+This example creates a [ViewModelBase](https://docs.devexpress.com/WPF/17351/mvvm-framework/viewmodels/viewmodelbase) class descendant View Model. This View Model contains bindable properties and commands that use the [DXMessageBoxService](https://docs.devexpress.com/WPF/17415/mvvm-framework/services/predefined-set/message-box-services/dxmessageboxservice) to show messages.
+
+![image](https://user-images.githubusercontent.com/65009440/228477863-381aee7d-d2e0-472b-86a8-95217164c3af.png)
+
+## Files to Review
+
 * [MainView.xaml](./CS/View/MainView.xaml) (VB: [MainView.xaml](./VB/View/MainView.xaml))
-* [MainView.xaml.cs](./CS/View/MainView.xaml.cs) (VB: [MainView.xaml.vb](./VB/View/MainView.xaml.vb))
-* **[MainViewModel.cs](./CS/ViewModel/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/ViewModel/MainViewModel.vb))**
-<!-- default file list end -->
-# How to: Use the ViewModelBase Class to Inherit View Models
+* [MainViewModel.cs](./CS/ViewModel/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/ViewModel/MainViewModel.vb))
 
+## Documentation
 
-<p>This example demonstrates how to use the <strong>ViewModelBase</strong> class for inheriting view models.<br />
-For additional information, refer to the following topic:<br />
-<a href="https://community.devexpress.com/blogs/wpf/archive/2013/08/29/getting-started-with-devexpress-mvvm-framework-commands-and-view-models.aspx"><u>Getting Started with DevExpress MVVM Framework. Commands and ViewModels.</u></a></p><br />
+* [ViewModelBase](https://docs.devexpress.com/WPF/17351/mvvm-framework/viewmodels/viewmodelbase)
+* [View Models](https://docs.devexpress.com/WPF/17439/mvvm-framework/viewmodels)
+* [Services in ViewModelBase Descendants](https://docs.devexpress.com/WPF/17446/mvvm-framework/services/services-in-viewmodelbase-descendants)
 
+## More Examples
 
-<br/>
-
-
+* [Create a Custom Service](https://github.com/DevExpress-Examples/wpf-mvvm-framework-create-a-custom-service)
+* [Use DialogService to Show a Modal Dialog Window](https://github.com/DevExpress-Examples/wpf-mvvm-framework-ui-services-dialogservice)
+* [WPF Data Grid - Handle Row Double-clicks in an MVVM Application](https://github.com/DevExpress-Examples/wpf-data-grid-handle-row-double-clicks-in-mvvm-application)
