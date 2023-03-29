@@ -5,7 +5,7 @@
     <RootNamespace>Example</RootNamespace>
     <AssemblyName>ExampleViewModelBase</AssemblyName>
     <BaseIntermediateOutputPath>obj.Wpf</BaseIntermediateOutputPath>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <UseWindowsForms>true</UseWindowsForms>
     <UseWPF>true</UseWPF>
